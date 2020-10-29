@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+        integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- LightSlider CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css"
+        integrity="sha512-yJHCxhu8pTR7P2UgXFrHvLMniOAL5ET1f5Cj+/dzl+JIlGTh5Cz+IeklcXzMavKvXP8vXqKMQyZjscjf3ZDfGA=="
+        crossorigin="anonymous" />
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- LightSlider.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"
+        integrity="sha512-Gfrxsz93rxFuB7KSYlln3wFqBaXUc1jtt3dGCp+2jTb563qYvnUBM/GP2ZUtRC27STN/zUamFtVFAIsRFoT6/w=="
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Bundle with Popper.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"
+        integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#review-slider-content').lightSlider({
+                auto: true,
+                loop: true,
+                responsive: [{
+                        breakpoint: 800,
+                        settings: {
+                            item: 3,
+                            slideMove: 1,
+                            slideMargin: 6,
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            item: 1,
+                            slideMove: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+    <title>Home Page</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-nav fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">MySite</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="#" class="btn btn-success btn-sm" data-toggle="modal"
+                        data-target="#registerOnline">Register Online</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+
+    <!-- Home Banner -->
+    <header class="main-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8">
+                    <div class="main-banner-content">
+                        <h1>Nesciunt eveniet eligendi</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-none d-sm-block">
+                <div class="col-lg-6 col-md-6">
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="search" class="form-control form-control-sm" placeholder="Search for.."
+                                aria-label="Search for" aria-describedby="button-addon2">
+                            <button class="btn btn-success" type="submit" id="button-addon2">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+                                    <path fill-rule="evenodd"
+                                        d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Home Banner -->
+
+    <!-- Classroom Training -->
+    <section class="classroom-training">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8">
+                    <div class="list-group">
+                        <div class="list-group-item active">
+                            Classroom Training Courses | Career Based | Short Term
+                        </div>
+                        <a href="#" class="list-group-item course-list-item">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4">
+                                    <img src="https://source.unsplash.com/random/600x314" alt="Random Image"
+                                        class="img-fluid">
+                                </div>
+                                <div class="col-lg-8 col-md-8">
+                                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro voluptatibus ut
+                                        eius unde commodi laboriosam iure beatae repellendus? Placeat error a rerum
+                                        dolores dolor tempora minus et quaerat reprehenderit temporibus!</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item course-list-item">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4">
+                                    <img src="https://source.unsplash.com/random/600x314" alt="Random Image"
+                                        class="img-fluid">
+                                </div>
+                                <div class="col-lg-8 col-md-8">
+                                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro voluptatibus ut
+                                        eius unde commodi laboriosam iure beatae repellendus? Placeat error a rerum
+                                        dolores dolor tempora minus et quaerat reprehenderit temporibus!</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item course-list-item">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4">
+                                    <img src="https://source.unsplash.com/random/600x314" alt="Random Image"
+                                        class="img-fluid">
+                                </div>
+                                <div class="col-lg-8 col-md-8">
+                                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro voluptatibus ut
+                                        eius unde commodi laboriosam iure beatae repellendus? Placeat error a rerum
+                                        dolores dolor tempora minus et quaerat reprehenderit temporibus!</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item course-list-item">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4">
+                                    <img src="https://source.unsplash.com/random/600x314" alt="Random Image"
+                                        class="img-fluid">
+                                </div>
+                                <div class="col-lg-8 col-md-8">
+                                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro voluptatibus ut
+                                        eius unde commodi laboriosam iure beatae repellendus? Placeat error a rerum
+                                        dolores dolor tempora minus et quaerat reprehenderit temporibus!</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item course-list-item">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4">
+                                    <img src="https://source.unsplash.com/random/600x314" alt="Random Image"
+                                        class="img-fluid">
+                                </div>
+                                <div class="col-lg-8 col-md-8">
+                                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro voluptatibus ut
+                                        eius unde commodi laboriosam iure beatae repellendus? Placeat error a rerum
+                                        dolores dolor tempora minus et quaerat reprehenderit temporibus!</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item course-list-item">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4">
+                                    <img src="https://source.unsplash.com/random/600x314" alt="Random Image"
+                                        class="img-fluid">
+                                </div>
+                                <div class="col-lg-8 col-md-8">
+                                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro voluptatibus ut
+                                        eius unde commodi laboriosam iure beatae repellendus? Placeat error a rerum
+                                        dolores dolor tempora minus et quaerat reprehenderit temporibus!</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item course-list-item">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4">
+                                    <img src="https://source.unsplash.com/random/600x314" alt="Random Image"
+                                        class="img-fluid">
+                                </div>
+                                <div class="col-lg-8 col-md-8">
+                                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro voluptatibus ut
+                                        eius unde commodi laboriosam iure beatae repellendus? Placeat error a rerum
+                                        dolores dolor tempora minus et quaerat reprehenderit temporibus!</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item course-list-item">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4">
+                                    <img src="https://source.unsplash.com/random/600x314" alt="Random Image"
+                                        class="img-fluid">
+                                </div>
+                                <div class="col-lg-8 col-md-8">
+                                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro voluptatibus ut
+                                        eius unde commodi laboriosam iure beatae repellendus? Placeat error a rerum
+                                        dolores dolor tempora minus et quaerat reprehenderit temporibus!</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="card text-white bg-primary sign-up-form-sidebar">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                Sign-up to get more details.
+                            </h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis reiciendis
+                                repellendus assumenda consequatur aliquid harum nulla mollitia fugit rem aperiam.
+                            </p>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control form-control-sm" placeholder="Your Name"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control form-control-sm" placeholder="Your Email ID"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" class="form-control form-control-sm" placeholder="Phone No"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control form-control-sm" placeholder="Course Name"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="submit" class="btn btn-warning btn-block btn-sm"
+                                        value="Register Online Now" required>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Classroom Training -->
+
+    <!-- Reviews Slider -->
+    <section class="reviews-slider">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-6">
+                    <div class="review-text-widget">
+                        <h2>What do people say about us</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, dolorem natus! Nihil
+                            odio, libero quia delectus iste ab consequuntur minus commodi! Aliquam laudantium
+                            voluptate earum error quas repellat magnam veniam!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="review-slider-holder">
+                        <ul id="review-slider-content">
+                            <li>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="img/user.png" alt="user">
+                                        <h6 class="card-title">User Name</h6>
+                                        <h5 class="star">
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                        </h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque pariatur nisi
+                                            eum similiqu
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="img/user.png" alt="user">
+                                        <h6 class="card-title">User Name</h6>
+                                        <h5 class="star">
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                        </h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque pariatur nisi
+                                            eum similiqu
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="img/user.png" alt="user">
+                                        <h6 class="card-title">User Name</h6>
+                                        <h5 class="star">
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                        </h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque pariatur nisi
+                                            eum similiqu
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="img/user.png" alt="user">
+                                        <h6 class="card-title">User Name</h6>
+                                        <h5 class="star">
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                        </h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque pariatur nisi
+                                            eum similiqu
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="img/user.png" alt="user">
+                                        <h6 class="card-title">User Name</h6>
+                                        <h5 class="star">
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                        </h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque pariatur nisi
+                                            eum similiqu
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Reviews Slider -->
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <aside class="footer-widget">
+                        <h5>Follow Us</h5>
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Youtube</a></li>
+                            <li><a href="#">Github</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <aside class="footer-widget">
+                        <h5>Site Map</h5>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Courses</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <aside class="footer-widget">
+                        <h5>Recent Updates</h5>
+                        <ul>
+                            <li><a href="#">Update One</a></li>
+                            <li><a href="#">Update Two</a></li>
+                            <li><a href="#">Update Three</a></li>
+                            <li><a href="#">Update Four</a></li>
+                            <li><a href="#">Update Five</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <aside class="footer-widget">
+                        <address>
+                            <h2>COMPANY</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat natus adipisci tenetur?
+                            </p>
+                            <p>
+                                <strong>Email: </strong> <a
+                                    href="mailto:someone@something.com">someone@something.com</a>
+                            </p>
+                            <p>
+                                <strong>Phone: </strong> <a href="tel:+95123456789">+95123456789</a>
+                            </p>
+                        </address>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Copy -->
+    <section class="copy">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; 2020. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Copy -->
+
+    <!-- Register Online Modal -->
+    <div class="modal fade" id="registerOnline" tabindex="-1" aria-labelledby="registerOnlineLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerOnlineLabel">Register Online</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="custom-divider">
+
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quos commodi?</p>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-control-sm" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control form-control-sm" placeholder="Your Email ID"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control form-control-sm" placeholder="Phone No" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-control-sm" placeholder="Course Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="submit" class="btn btn-success btn-block btn-sm" value="Register Online Now"
+                                required>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Register Online Modal -->
+
+
+</body>
+
+</html>
